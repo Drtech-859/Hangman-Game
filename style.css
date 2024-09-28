@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+    color: #096ab0;
+}
+body{
+    background-image: url('./images/texture-graph-paper-gray-grid-line-paper-sheet_322958-3204.avif');
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-container{
+    display: flex;
+    position: relative;
+    top: 7rem;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.word{
+    font-size: 36px;
+    min-width: 50px;
+    height: 55px;
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 5px solid black;
+    border-radius: 4px;
+}
+
+.hangman-container{
+    padding: 5rem;
+    grid-row:1/3;
+    grid-column:2/3;
+}
+
+.hangman{}
+
+.keyboard{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.key{
+    font-size: 50px;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.cross{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 70px;
+}
+
+.gif{
+    width: 100px;
+    height: 300pc;
+}
